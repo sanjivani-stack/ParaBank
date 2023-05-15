@@ -13,17 +13,18 @@ public class TC_001_AccountRegistrationTest extends BaseClass{
 	  {
 	  Registerpage rp= new Registerpage(driver);
 	  rp.lnk();
-	  rp.setfirstname("sai");
-	  rp.setlasttname("s");
+	  rp.setfirstname(randomeString().toUpperCase());
+	  rp.setlasttname(randomeString().toUpperCase());
 	  rp.setaddress("123  street");
 	  rp.setcity("richmond");
 	  rp.setstate("ontario");
 	  rp.setzipcode("ad456");
-	  rp.setphoneum("1237895679");
-	  rp.setssnumber("34589675");
-	  rp.setusername("sais@abc.com");
-	  rp.setpassword("password");
-	  rp.setrepeatpassword("password");
+	  rp.setphoneum(randomeNumber());
+	  rp.setssnumber(randomeNumber());
+	  rp.setusername(randomeString()+"@gmail.com");
+	  String password = randomeAlphaNumeric();
+	  rp.setpassword(password);
+	  rp.setrepeatpassword(password);
 	  rp.btton();
 	  
 		  
