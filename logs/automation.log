@@ -1,0 +1,6 @@
+11:10:26.350 [main] INFO  TestCases.TC_001_AccountRegistrationTest - ***starting test case***
+11:10:27.356 [main] INFO  TestCases.TC_001_AccountRegistrationTest - clicked on register link
+11:10:27.452 [main] INFO  TestCases.TC_001_AccountRegistrationTest - entering customer data
+11:26:33.482 [main] INFO  TestCases.TC_001_AccountRegistrationTest - ***starting test case***
+11:26:33.924 [main] INFO  TestCases.TC_001_AccountRegistrationTest - clicked on register link
+11:26:34.021 [main] INFO  TestCases.TC_001_AccountRegistrationTest - entering customer data

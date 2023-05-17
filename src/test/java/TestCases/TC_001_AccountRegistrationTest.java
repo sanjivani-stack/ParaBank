@@ -9,11 +9,15 @@ import testBase.BaseClass;
 public class TC_001_AccountRegistrationTest extends BaseClass{
   @Test
   public void Registration() {
+	  
+	  logger.info("***starting test case***");
 	  try
 	  {
 	  Registerpage rp= new Registerpage(driver);
 	  rp.lnk();
+	  logger.info("clicked on register link");
 	  rp.setfirstname(randomeString().toUpperCase());
+	  logger.info("entering customer data");
 	  rp.setlasttname(randomeString().toUpperCase());
 	  rp.setaddress("123  street");
 	  rp.setcity("richmond");

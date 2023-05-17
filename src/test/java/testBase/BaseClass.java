@@ -3,6 +3,8 @@ package testBase;
 import java.time.Duration;
 
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -13,13 +15,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 
 public  static WebDriver driver;
+public Logger logger; //for logging
 	
 	
 	@BeforeClass
 
 	public void setup() {
 		
-		
+		logger=LogManager.getLogger(this.getClass());
 		ChromeOptions ops=new ChromeOptions();
 		ops.addArguments("--remote-allow-origins=*");
 		/*if(br.equals("chrome"))
